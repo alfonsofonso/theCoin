@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script  src="app.js"></script> 
+  <!--   <script type="module" src="./app.js"></script> 
+    <script  type="module"   src="openfort-js-main/src/openfort.ts"></script>  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE COIN</title>
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <h1>THE COIN</h1>
+    <P>the Coin belongs to Max, if you want it place a bet</P>
+    <div id="coin-flip">
+        <div id="coin-tails">
+          <img src="tails.png">
+        </div>
+        <div id="coin-heads">
+          <img src="heads.png">
+        </div>
+      </div>
+     <br>
+      <input placeholder="Euros" type="text">
+      <button id="cara" onclick="flipa(1)">I choose heads</button>
+      <button id="cruz" onclick="flipa(0)">I preffer tails</button>
+      <h3 id="parrafo"></h3>
+</body>
+
+</html>
+

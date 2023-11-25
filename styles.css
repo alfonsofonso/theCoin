@@ -1,0 +1,35 @@
+body {
+    font-family: sans-serif;
+}
+html{
+    background-color: rgb(69, 69, 69);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.login-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.game-area {
+    border: 1px solid #ccc;
+    padding: 20px;
+}

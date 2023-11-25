@@ -1,0 +1,130 @@
+h1 {
+    color: ghostwhite;
+    margin: auto;
+}
+h2 {
+    color: ghostwhite;
+    margin: auto;
+    
+}
+
+p {
+    color: dimgrey;
+    margin: auto;
+}
+
+
+body {
+    background-color: rgb(0,0,0);
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  #coin-flip{
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    transform-style: preserve-3d;
+    position: absolute;
+    animation: fly 10.5s ease-in-out 0s infinite alternate;
+    backface-visibility: hidden;
+  }
+  #coin-flip img{
+    width: 100px;
+   
+  }
+
+
+  #coin-flip2{
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    transform-style: preserve-3d;
+    position: absolute;
+    animation: fly 0.5s ease-in-out 0s infinite alternate;
+    backface-visibility: hidden;
+  }
+
+  #coin-heads, #coin-tails, #coin-heads2, #coin-tails2 {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    clip-path: circle(46%);
+  }
+  
+  #coin-heads{
+    animation: flip-head 1s linear 0s infinite alternate;
+  }
+  #coin-tails{
+    animation: flip-tail 1s linear 0s infinite alternate;
+  }
+  #coin-heads2{
+    animation: flip-head 0s linear 0s infinite alternate;
+  }
+  #coin-tails2{
+    animation: flip-tail 0s linear 0s infinite alternate;
+  }
+  #acac{
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    transform-style: preserve-3d;
+    position: absolute;
+    
+    backface-visibility: hidden;
+  }
+
+  #acac2{
+    width: 100px;
+    height: 100px;
+    left: 0;
+    right: 0;
+    top: 30%;
+    margin: auto;
+    transform-style: preserve-3d;
+    position: absolute;
+
+    backface-visibility: hidden;
+  }
+  #acac3{
+    visibility: hidden;
+  }
+
+  @keyframes fly {
+/*     0% { top: 100%; }
+    100% { top: 0%; } */
+    0%, 100% {transform: rotateZ(0deg); }
+        50% { transform: rotateZ(180deg);
+    }
+  }
+  
+  @keyframes flyer {
+    /*     0% { top: 100%; }
+        100% { top: 0%; } */
+        0%, 100% {transform: rotateX(0deg); }
+            50% { transform: rotate(180deg);
+        }
+      }
+
+  @keyframes flip-head {
+    0%, 100% { transform: rotateX(0deg); }
+    50% { transform: rotateX(180deg); }
+  }
+  
+  @keyframes flip-tail {
+    0%, 100% { transform: rotateX(180deg); }
+    50% { transform: rotateX(0deg); }
+  }
+  #parrafo{
+    color: antiquewhite;
+  }
